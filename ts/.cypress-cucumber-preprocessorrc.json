@@ -1,0 +1,8 @@
+{
+
+  "html":{
+    "enabled":true,
+    "output":"cypress/reports/index.html"
+  }
+
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "baseUrl": "./",
+    "module": "nodenext",
+    "moduleResolution": "node16",
+    "types": ["cypress", "node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "paths": {
+      "@badeball/cypress-cucumber-preprocessor/*": ["./node_modules/@badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/*"]
+    },
+    "skipLibCheck": true  // Ignore les vérifications de type des bibliothèques pour éviter ce genre de problème
+  },
+  "include": [
+    "cypress/**/*.ts",
+    "cypress/**/*.feature"
+  ],
+  "exclude": [
+    "./cypress.config.ts"
+  ]
+}

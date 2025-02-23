@@ -25,6 +25,7 @@ RUN ls -la /home/node/app/dist/
 FROM nginx:alpine
 LABEL maintainer="Ousmane Vincent Dione"
 
+
 # Copier les fichiers buildés depuis le stage précédent
 COPY --from=builder /home/node/app/dist/samagp /usr/share/nginx/html
 
